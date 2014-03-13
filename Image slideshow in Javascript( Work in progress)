@@ -1,0 +1,28 @@
+<script type="text/javascript">
+
+ var photos=new Array()
+ var image=0
+ photos[0]="http://farm8.staticflickr.com/7459/10697242273_a2797b5bac_c.jpg"
+ photos[1]="http://farm4.staticflickr.com/3815/10697062796_91d30d58f4_c.jpg"
+ photos[2]="http://farm3.staticflickr.com/2857/10697034234_75bfc421db_c.jpg"
+
+ function backward(){
+    if (image > 0){
+        image=image-1
+        document.images.photoslider.src=photos[img]
+    }
+ }
+
+ function forward(){
+     if (image<photos.length-1){
+        image=image+1
+        document.images.photoslider.src=photos[img]
+     }
+ }
+
+ </script>
+
+ <form>
+     <input type="button" value="&lt;&lt;Back" onClick="backward()"> 
+     <input type="button" value="Next&gt;&gt;" onClick="forward()">
+ </form>
